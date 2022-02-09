@@ -1,21 +1,29 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-int main() {
-	int test;
-	int num_repeat;
-	char str[21];
+#define _RT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int main()
+{
+    int number, repeat;
+    int i,j,k;
 
-	scanf("%d", &test);
+    char s[21];
+    scanf("%d", &number);
 
-	for (int i = 0; i < test; i++) {		
-		scanf("%d", &num_repeat);
-		scanf("%s", str);
+    for (i = 0; i < number; i++)
+    {
+        scanf("%d", &repeat);
+        scanf("%s", s);
 
-		for (int i = 0; str[i] != 0; i++) {
-			for (int j = 0; j < num_repeat; j++) {
-				printf("%c", str[i]);
-			}
-		}
-		printf("\n");
-	}
+        for (int i = 0; s[i] != 0; i++)
+        {
+            for (j = 0; j < repeat; j++)
+            {
+                printf("%c", s[i]);
+            }
+        }
+        printf("\n");
+    }
+
+
+
+    return 0;
 }

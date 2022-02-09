@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2447 별 찍기-10.c">
+    <ClCompile Include="2447 별 찍기-10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
