@@ -1,2 +1,3 @@
-﻿  test.c
-  test_for_c.vcxproj -> C:\Users\1004s\OneDrive\바탕 화면\Repository\VS\BOJ\Debug\test_for_c.exe
+﻿  test.cpp
+C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\test_for_c\test.cpp(47): warning C4715: 'min': not all control paths return a value
+  test_for_c.vcxproj -> C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\Debug\test_for_c.exe
