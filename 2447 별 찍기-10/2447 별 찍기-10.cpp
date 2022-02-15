@@ -4,6 +4,7 @@ https://codesyun.tistory.com/75       참고
 #include <iostream>
 using namespace std;
 
+//	분할 정복
 void star(int i, int j, int n) {
 	if (i / n % 3 == 1 && j / n % 3 == 1) {		//	빈칸 적발
 		cout << " ";
@@ -26,4 +27,17 @@ int main() {
 		}
 		cout << '\n';
 	}
+	/*
+	star(0,0,27) -> star(0,0,9) -> star(0,0,3) -> star(0,0,1) -> star(0,0,0)
+	star(0,1,27)
+	star(0,2,27)
+	star(0,3,27)
+	star(0,4,27)
+	star(0,5,27)
+
+	star(1,1,27) -> star(1,1,9) -> star(1,1,3) -> star(1,1,1) -> star(1,1,0)
+	
+	
+	star(27,27,27) 
+	*/
 }
