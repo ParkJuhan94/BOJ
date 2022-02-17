@@ -1,61 +1,47 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+int isPrimeNum(int n) {
+    int cnt = 0;
+
+    if (n == 2) {
+        return 1;
+    }
+
+    for (int i = 1; i * i <= n; i++) {
+        if (n % i == 0) {
+            cnt++;
+        }
+        if (cnt > 1) {
+            return 0;
+        }
+    }
+
+    if (cnt == 1) {
+        return 1;
+    }
+}
+
 int main() {
-    int a, b, c;
-    int flagA = 0, flagB = 0, flagC = 0;
-    int max = 0;
-    int equal_3 = 0, equal_2 = 0;
-    int res = 0;
-    scanf("%d %d %d", &a, &b, &c);
+    int i, j, k;
+    int n, evenNum;
+    int max = 0, min = 10000;
+    
 
-    if (a > max) {
-        max = a;
-    }
-    if (b > max) {
-        max = b;
-    }
-    if (c > max) {
-        max = c;
-    }
+    scanf("%d", &n);
+    for (i = 0; i < n;i++) {
+        scanf("%d", &evenNum);
+        max = 0;
+        min = 10000;
 
-
-    if (a == b && b == c) {
-        equal_3 = 1;
-    }
-    else if (a == b) {
-        equal_2 = 1;
-        flagA = 1;
-        flagB = 1;
-    }
-    else if (b == c) {
-        equal_2 = 1;
-        flagB = 1;
-        flagC = 1;
-    }
-    else if (c == a) {
-        equal_2 = 1;
-        flagC = 1;
-        flagA = 1;
-    }
-    //printf("cnt : %d\n", cnt);
-
-    if (equal_3 == 1) {
-        res = 10000 + a * 1000;
-    }
-    if (equal_3 != 1 && equal_2 == 1) {
-        if (flagA == 1) {
-            res = 1000 + a * 100;
+        for (j = 2; j <= evenNum / 2; j++) {
+            if (isPrimeNum(j) && isPrimeNum(evenNum - j)) {
+                if (j > max) {
+                    max = j;
+                }
+            }
         }
-        if (flagB == 1) {
-            res = 1000 + b * 100;
-        }
-        if (flagC == 1) {
-            res = 1000 + c * 100;
-        }
-    }
-    if (equal_3 != 1 && equal_2 != 1) {
-        res = max * 100;
-    }       
-    printf("%d\n", res);
+
+        printf("%d %d\n", max, evenNum - max);
+    }    
 }
