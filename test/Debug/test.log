@@ -1,4 +1,2 @@
 ﻿  test.cpp
-C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\test\test.cpp(26,15): warning C4101: 'k': unreferenced local variable
-C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\test\test.cpp(23): warning C4715: 'isPrimeNum': not all control paths return a value
   test.vcxproj -> C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\Debug\test.exe
