@@ -1,19 +1,29 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-int main() {
-	int map[8][8];
-	int i, j;
-	int cnt = 0;
 
-	for (i = 0; i < 8; i++) {
-		for (j = 0; j < 8; j++) {
-			scanf("%c", &map[i][j]);
-			if (map[i][j] == 'F' && (i + j) % 2 == 0) {
-				cnt++;
-			}
-		}
-	}
-	printf("%d", cnt);
+int main()
+{
+    int score[5] = { 0 };
+    int tmp;
+    int i, j;
+    int max = 0;
+    int winner;
+
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j < 4; j++) {
+            scanf("%d", &tmp);
+            score[i] += tmp;
+        }
+    }
+
+    for (i = 0; i < 5; i++) {
+        if (score[i] > max) {
+            max = score[i];
+            winner = i;
+        }
+    }
+    printf("%d %d", winner + 1, score[winner]);
 }
