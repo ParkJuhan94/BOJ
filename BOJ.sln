@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2374 같은 수로 만들기", "2374 같은 수로 만들기\2374 같은 수로 만들기.vcxproj", "{C094293C-B7C9-4FBE-A914-7BE4A1C7B301}"
 EndProject
@@ -34,6 +34,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10844 쉬운 계단 수", "10844 쉬운 계단 수\10844 쉬운 계단 수.vcxproj", "{2523B6C2-9EDF-4314-A775-1E8600624120}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이위상문제01", "이위상문제01\이위상문제01.vcxproj", "{C6EA38C0-3378-45C8-B2F0-1824DE63AC9B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scpc_1_마당 잔디 깎기", "scpc_1_마당 잔디 깎기\scpc_1_마당 잔디 깎기.vcxproj", "{A5874070-A439-4C23-9614-8F15EFF1EDF5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "scpc_2_엑스칼리버를 찾아서", "scpc_2_엑스칼리버를 찾아서\scpc_2_엑스칼리버를 찾아서.vcxproj", "{63A00078-4F2A-4540-8E15-D926D96ECD46}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "110003 최솟값 찾기", "110003 최솟값 찾기\110003 최솟값 찾기.vcxproj", "{13244660-3394-457F-A48E-07C5F81D3C76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +177,30 @@ Global
 		{C6EA38C0-3378-45C8-B2F0-1824DE63AC9B}.Release|x64.Build.0 = Release|x64
 		{C6EA38C0-3378-45C8-B2F0-1824DE63AC9B}.Release|x86.ActiveCfg = Release|Win32
 		{C6EA38C0-3378-45C8-B2F0-1824DE63AC9B}.Release|x86.Build.0 = Release|Win32
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Debug|x64.ActiveCfg = Debug|x64
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Debug|x64.Build.0 = Debug|x64
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Debug|x86.ActiveCfg = Debug|Win32
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Debug|x86.Build.0 = Debug|Win32
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Release|x64.ActiveCfg = Release|x64
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Release|x64.Build.0 = Release|x64
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Release|x86.ActiveCfg = Release|Win32
+		{A5874070-A439-4C23-9614-8F15EFF1EDF5}.Release|x86.Build.0 = Release|Win32
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Debug|x64.ActiveCfg = Debug|x64
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Debug|x64.Build.0 = Debug|x64
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Debug|x86.ActiveCfg = Debug|Win32
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Debug|x86.Build.0 = Debug|Win32
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Release|x64.ActiveCfg = Release|x64
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Release|x64.Build.0 = Release|x64
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Release|x86.ActiveCfg = Release|Win32
+		{63A00078-4F2A-4540-8E15-D926D96ECD46}.Release|x86.Build.0 = Release|Win32
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Debug|x64.ActiveCfg = Debug|x64
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Debug|x64.Build.0 = Debug|x64
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Debug|x86.ActiveCfg = Debug|Win32
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Debug|x86.Build.0 = Debug|Win32
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Release|x64.ActiveCfg = Release|x64
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Release|x64.Build.0 = Release|x64
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Release|x86.ActiveCfg = Release|Win32
+		{13244660-3394-457F-A48E-07C5F81D3C76}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

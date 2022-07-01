@@ -1,29 +1,52 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include?<iostream>
+#include?<vector>
+#include?<queue>
 
+#define?endl?"\n"
+#define?MAX?5000010
+using?namespace?std;
 
-int main()
+int?N, L;
+int?Arr[MAX];
+
+void?Input()
 {
-    int score[5] = { 0 };
-    int tmp;
-    int i, j;
-    int max = 0;
-    int winner;
-
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 4; j++) {
-            scanf("%d", &tmp);
-            score[i] += tmp;
-        }
-    }
-
-    for (i = 0; i < 5; i++) {
-        if (score[i] > max) {
-            max = score[i];
-            winner = i;
-        }
-    }
-    printf("%d %d", winner + 1, score[winner]);
+	cin? >> N? >> L;
+	for?(int?i? = 1;?i? <= N;?i++)?cin? >> Arr[i];
 }
+
+void?Solution()
+{
+	deque<pair<int, int>>?DQ;
+	for?(int?i? = 1;?i? <= N;?i++)
+	{
+		if?(DQ.empty() == false)
+		{
+			if?(DQ.front().second? < i? - L? + 1)?DQ.pop_front();
+		}
+		while?(DQ.empty() == false? && DQ.back().first? > Arr[i])?DQ.pop_back();
+		DQ.push_back(make_pair(Arr[i], i));
+		cout? << DQ.front().first? << "?";
+	}
+	cout? << endl;
+}
+
+void?Solve()
+{
+	Input();
+	Solution();
+}
+
+int?main(void)
+{
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
+	//????freopen("Input.txt",?"r",?stdin);
+	Solve();
+
+	return?0;
+}
+
+

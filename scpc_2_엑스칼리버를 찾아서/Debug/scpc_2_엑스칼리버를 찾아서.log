@@ -1,0 +1,4 @@
+﻿  scpc_2_엑스칼리버를 찾아서.cpp
+C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\scpc_2_엑스칼리버를 찾아서\scpc_2_엑스칼리버를 찾아서.cpp(13,9): warning C4101: 'b' :참조되지 않은 지역 변수입니다.
+C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\scpc_2_엑스칼리버를 찾아서\scpc_2_엑스칼리버를 찾아서.cpp(13,12): warning C4101: 'c' :참조되지 않은 지역 변수입니다.
+  scpc_2_엑스칼리버를 찾아서.vcxproj -> C:\Users\1004s\OneDrive\Desktop\Repository\VS\BOJ\Debug\scpc_2_엑스칼리버를 찾아서.exe
